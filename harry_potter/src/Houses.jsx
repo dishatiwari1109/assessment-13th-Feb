@@ -7,8 +7,8 @@ function Houses() {
         queryKey: ["houses"],
         queryFn: () => fetch("https://potterapi-fedeperin.vercel.app/en/houses/")
         .then(res => res.json()),
-        staleTime: 10000, 
-        gcTime: 20000, 
+        staleTime: 1000*60*5, 
+        gcTime: 1000*60*6, 
     })
 
   if (isLoading) {
