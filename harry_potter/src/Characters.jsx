@@ -8,8 +8,8 @@ function Characters() {
       fetch("https://potterapi-fedeperin.vercel.app/en/characters/").then(
         (res) => res.json(),
       ),
-    staleTime: 10000,
-    gcTime: 20000,
+    staleTime: 1000*60*10,
+    gcTime: 1000*60,
   });
 
   if (isLoading) {
