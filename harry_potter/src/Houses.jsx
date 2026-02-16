@@ -12,8 +12,8 @@ function Houses() {
         queryKey: ["houses"], // Unique key for this query
         queryFn: () => fetch("https://potterapi-fedeperin.vercel.app/en/houses/")
         .then(res => res.json()),
-        staleTime: 1000*60*5,  // Data stays fresh for 5 minutes
-        gcTime: 1000*60*10,    // Cache persists for 10 minutes
+        staleTime: 10000, 
+        gcTime: 20000, 
     })
 
   // Show loading state

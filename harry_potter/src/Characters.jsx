@@ -13,8 +13,13 @@ function Characters() {
       fetch("https://potterapi-fedeperin.vercel.app/en/characters/").then(
         (res) => res.json(),
       ),
+<<<<<<< HEAD
     staleTime: 1000*60*5,  // Data stays fresh for 5 minutes
     gcTime: 1000*60*10,    // Cache persists for 10 minutes
+=======
+    staleTime: 1000*60*10,
+    gcTime: 1000*60,
+>>>>>>> 2241926b03955aca0272bb2fceab39512a1d00fe
   });
 
   // Show loading state
